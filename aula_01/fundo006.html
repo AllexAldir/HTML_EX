@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundos de tela</title>
     <style>
         body{
+            margin: auto;
             height: 98vh;
             background-color: black;
             background-position: center center; /*Minha imagem fica no centro do meu body*/
             background-image: url(imagens/wallpaper002.jpg);
-            background-repeat: repeat-y; /*A imagem repete na altura*/
+            background-repeat: no-repeat; /*A imagem repete na altura*/
             background-size: cover; /*Cobre toda
             dimensão da tela (view port)*/
+            background-attachment: fixed;
+            max-width: 1000px;
+
+            /*Se quiser fazer uma shorthand{
+                backgroun: color > image > position > reapt > [size] > attachment*/
+            /* background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed; */
         }
         main{
             background-color: white;
