@@ -1,13 +1,44 @@
 @charset "UTF-8";
 
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
+@import url('https://fonts.googleapis.com/css2? family= Lato & family= Passion+One & family= Work+Sans & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Lato & family= Passion+One & family= Sriracha & family= Work+Sans & display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2? family= Lato & family= Passion+One & family= Sriracha & family= Work+Sans & display=swap');
+
+/*
+font-family: 'Sriracha',
+cursiva;
+
+font-family: 'Passion One',
+cursiva;
+*/
+
+:root{
+    --font01: Verdana, Geneva, Tahoma, sans-serif;
+    --font02: 'Passion One','cursiva';
+    --font03: 'Sriracha',
+        cursiva;
+        
+}
+
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
+    
 }
 
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--font01);
 }
 
 header{
@@ -23,6 +54,8 @@ header > h1{
     Aqui deixa o coteúdo do h1 em letras maiúsculas...
 
     */
+    font-family: var(--font02);
+    font-size: 8vw;
 }
 
 header > p{
@@ -52,6 +85,9 @@ section{
 
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font03);
+    font-weight: bolder;
+    font-size: 3vw;
 }
 
 .normal{
@@ -66,7 +102,9 @@ section{
 
 .imagem > p{
     background-color: rgba(58, 58, 58, 0.777);
-    width: 400px;
+    /* width: 400px; */
+    display: inline-block;
+    padding: 5px;
 }
 
 footer{
