@@ -121,6 +121,7 @@ section{
     background-position: right center;
     background-size: cover;
     background-attachment: fixed;
+    margin-bottom: -19px;
 }
 
 .imagem#img02{
@@ -137,4 +138,13 @@ footer{
     text-align: center;
     color: white;
     padding: 10px;
+}
+
+picture{
+    padding-right: 10px;
+}
+
+img{
+    display: inline-block;
+    /* padding-top: 10px; */
 }
