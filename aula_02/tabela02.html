@@ -7,13 +7,28 @@
     <title>tabela02</title>
     <style>
         h1{
+            /* width: 800px; */
             text-align: center;
+            border-radius: 10px 0px 0px 10px;
+            background-image: linear-gradient(to right, green, yellow, transparent);
         }
         table{
             border-collapse: collapse;
             width: 500px;
             margin: auto;
         }
+
+        caption{
+            font-size: 1.2em;
+            font-weight: lighter;
+            background-color: rgba(128, 128, 128, 0.452);
+            padding: 10px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: rgba(128, 128, 128, 0.606);
+        }           /*Efeito Zebrado*/
 
         td, th{
             border: 1px solid black;
@@ -22,7 +37,7 @@
         }
 
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(24, 24, 24);
             color: white;
         }
 
@@ -45,10 +60,11 @@
             
     -->
     <table>
+        <caption>Unidades federativas</caption>
         <thead>
             <tr>
-                <th>estado</th>
-                <th>população</th>
+                <th scope="col" style="width: 450px;">estado</th>
+                <th scope="col" style="width: 100px;">população</th>
                 <!-- <th>porcentagem</th> -->
             </tr>
         </thead>
@@ -192,7 +208,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>0000</td>
             </tr>
 
