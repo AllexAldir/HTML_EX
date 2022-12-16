@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Work+Sans&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    
+}
+
+:root{
+    --font_cb: 'Work Sans', sans-serif;
+    --font_h1: 'Oswald', sans-serif;
+
+}
+
+body{
+    height: 100vh;
+}
+
+header{
+    background-color: gray;
+    height: 60px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+header > h1{
+    text-align: center;
+    font-family: var(--font_h1);
+
+}
+
+header > a{
+    display: inline-block;
+    /* background-color: white; */
+    margin-top: 20px;
+    padding: 9.3px;
+    text-decoration: none;
+    color: rgb(0, 81, 255);
+
+}
+
+header > a:hover{
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.552);
+    transition-duration: 0.5ms;
+    border-radius: 8px 8px 0px 0px;
+
+}
+
+main{
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px dashed black;
+    height: 600px;
+}
+
+h1{
+    text-align: center;
+}
+
+caption{
+    /* background-color: black; */
+    margin-top: 10px;
+}
+
+table{
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    margin: auto;
+
+}
+
+thead{
+    background-color: rgb(93, 93, 93);
+
+}
+
+thead > tr > th{
+    color: white;
+   
+}
+
+th,td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+tbody > tr:nth-child(even){
+    background-color: rgb(191, 187, 187);
+}   
+
+.num{
+    text-align: right;
+}
