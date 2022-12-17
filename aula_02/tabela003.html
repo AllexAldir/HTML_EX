@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem</title>
+
+    <style>
+
+        body{
+            font-family: sans-serif;
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            /* margin-top: 30px; */
+        }
+        
+        td{
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            
+        }
+
+        .b{
+            background-color: aqua;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Tabelas</h1>
+    <table>
+        <tr>   <!--Linhas para tabela-->
+            <td>A</td>  <!--células-->
+            <td colspan="2" class="b">B</td>
+            <!-- <td>C</td> -->
+        </tr>
+
+        <tr>
+            <td colspan="3">D</td>
+            <!-- <td>E</td> -->
+            <!-- <td>F</td> -->
+        </tr>
+
+        <tr>
+            <td rowspan="2" colspan="2">G</td>
+            <!-- <td>H</td> -->
+            <td rowspan="1">I</td> 
+        </tr>
+
+        <tr>
+            <!-- <td>J</td> -->
+            <!-- <td>K</td> -->
+            <!-- <td>L</td> -->
+        </tr>
+    </table>
+</body>
+</html>

@@ -69,6 +69,7 @@ caption{
 }
 
 table{
+    position: relative;
     /* border: 1px solid black; */
     border-collapse: collapse;
     margin: auto;
@@ -81,6 +82,10 @@ thead{
 }
 
 thead > tr > th{
+    position: sticky; 
+    top: 0;             /*Dar o efeito de que 
+                        o cabeçalho está fixo*/
+    background-color: black;
     color: white;
    
 }
