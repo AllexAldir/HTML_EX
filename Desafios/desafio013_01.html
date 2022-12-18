@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio_mesclagem</title>
+    <style>
+
+        *{
+            margin: 0;
+        }
+
+        h1{
+            text-align: center;
+            color: rgb(254, 96, 38);
+            background-color: rgba(0, 0, 0, 0.089);
+            margin-bottom: 50px;
+            padding-top: 50px;
+            height: 100px;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            height: 150px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        th{
+            font-weight: bolder;
+        }
+
+        th:hover{
+            text-decoration: underline;
+        }
+
+        td,th{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        caption{
+            /* background-color: black; */
+            /* padding: 5px */
+            margin-bottom: 10px;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>Tabela01</h1>
+    <main>
+        <table>
+            <caption>Tabela</caption>
+            <thead>
+                <tr>
+                    <th colspan="4" scope="col"><abbr title="Números referentes a tabela">Numeros</abbr></th>
+                </tr>
+            </thead>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <!-- <td>7</td> -->
+                <td>7</td>
+            </tr>
+
+            <tr>
+                <td colspan="3">8</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">10</td>
+                <td colspan="2">11</td>
+                <td>12</td>
+                
+            </tr>
+
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                
+            </tr>
+
+
+        </table>
+
+        <h1>Tabela02</h1>
+
+        <table>
+            <caption>Tabela</caption>
+            <tr>
+                <td colspan="4">A</td>
+                <td rowspan="4">B</td>
+
+            </tr>
+
+            <tr>
+                <td rowspan="4">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            
+            </tr>
+
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            
+            </tr>
+
+            <tr>
+                <td>J</td>
+                <td>L</td>
+                <td>M</td>
+            
+            </tr>
+
+            <tr>
+                <td colspan="4">N</td>
+            
+            </tr>
+
+        </table>
+
+    </main>
+</body>
+</html>
