@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabele Overflow</title>
+
+    <style>
+
+        caption{
+            margin: 0px 0px 12px 0px;
+        }
+
+        table{
+            border-collapse: collapse;
+
+            margin: auto;
+            width: 1000px;
+
+
+        }
+
+        th{
+            background-color: white;
+        }
+
+        th,td{
+            border: 1px solid black;
+
+            padding: 8px;
+        }
+
+        div{
+            overflow-x: auto;
+
+            /*
+            Aqui deixa minhas tabelas mais respnsivas!
+            */
+
+            
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: rgba(128, 128, 128, 0.399);
+        }
+
+        .pri{
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Tabela com overflow</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla eum vel saepe.</p>
+
+    <div>
+        <table>
+
+            <colgroup>
+                <col class="pri">
+                <col class="seg">
+                <col class="ter">
+            </colgroup>
+
+            <caption>Tabela exemplo</caption>
+            <thead>
+                <tr>
+                    <th colspan="3" scope="colgroup">Musicas</th>
+        
+                </tr>
+            </thead>
+            <tbody>
+        
+                <tr>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
