@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
 
 
     <style>
@@ -45,23 +46,26 @@
         Aqui inciar o processo de criação de formulários!
     -->
 
-    <form action="" name="form01" id="">
+    <form action="cadastro.php" name="form01" autocomplete="off">
 
         <!--
             Criando formulário... apos colocar um parágrafo colocar o input para importa campos de captação de dados!
         -->
 
-        <p>Nome: <input type="text"></p>
-        <p>Sobrenome: <input type="text"></p>
+        <p> <label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <!--Ideal que os inputs tenham nomes (name) para identificação dos navegadores-->
 
         <p><input type="submit" value="Enviar"> <!--Aqui cria o botão de enviar!--> </p>
         
     </form>
 
 
-    <form action="" class="f02" name="fomr002">
+    <form action="cadastro.php" class="f02" name="fomr002">
 
-        <p>Idade: <input type="text"></p>
+        <p><label for="iidade">Idade:</label> <input type="text" name="idade" id="iidade"></p>
+        
         <p><input type="submit" value="Enviar"></p>
 
     </form>
