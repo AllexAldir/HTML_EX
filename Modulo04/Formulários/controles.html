@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comtroles</title>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+    <h1>Criando outro formulário</h1>
+
+    <form action="php.form.php"method="post" autocomplete="on">
+
+        <p>
+            <label for="isu">Nome: </label>
+            <input type="text" id="isu" required minlength="3" placeholder="Usuário!" autocomplete="username"> 
+
+
+        </p>
+
+        <p>
+            <label for="senha">Senha: </label>
+            <input type="password" id="senha" required minlength="8" maxlength="20"  placeholder="Minimo 8 caracteres" autocomplete="new-password">
+        </p>
+
+        <p><input type="submit" value="Enviar"></p>
+
+        <p><input type="reset" value="Limpar"></p>
+
+        <!--Colocando o typa="como reset para limpar as informções"-->
+
+        <!--Para poder prosseguir com o formulário o usuário deverá ter que preencher todos os campos dos inputs utilizando o metódo "required"-->
+
+    </form>
+</body>
+</html>
