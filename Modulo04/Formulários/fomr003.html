@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+
+    <form action="php.form.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="iname">Nome:</label>
+            <input type="text" id="iname" placeholder="DIgite o seu nome" minlength="8" maxlength="16" autocomplete="name" required>
+        </p>
+
+        <p>
+            <label for="imedoa">Média</label>
+            <input type="number" id="imedoa" placeholder="Digite as médias" step="0.1" min="0" max="10" required value="6">
+
+            <!--O Atributo "step" serve para contar de quanto em quanto passo a passo... Ex: 0.5(0.5, 1, 1.5...)-->
+
+            <!--No number ele somente deixa colocar numeros!-->
+
+        </p>
+
+        <p>
+            <label for="imes">Mês letivo</label>
+            <input type="month" id="imes" required >
+        </p>
+
+        <p>
+            <label for="idate">Data:</label>
+            <input type="date" required id="idate">
+
+            <!--Forma de validar as datas!-->
+        </p>
+
+        <p>
+            <label for="ihora">Hora da prova:</label>
+            <input type="time" required value="13:00" >
+        </p>
+
+        <p>
+            <input type="submit"value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
