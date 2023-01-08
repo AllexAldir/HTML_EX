@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controles de form</title>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+    <style>
+
+        fieldset#fid01{
+
+            margin: 0px 0px 35px 0px;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Check Box</h1>
+
+    <form action="php.form.php" method="get" autocomplete="on">
+
+        <fieldset id="fid01">
+            <legend>Sexo</legend>
+
+            <input type="radio" id="isexo" name="isexo"> <label for="isexo">Masculino</label><br>
+
+            <input type="radio" id="isexof" name="isexo"><label for="isexof">Femenino</label>
+
+            <!--Se quiser alterar as opções corretas basta colocar o msm "name" para os inputs!-->
+        </fieldset>
+
+        <fieldset id="fid02">
+
+            <legend>Esportes</legend>
+
+            <input type="checkbox" id="ibas"> <label for="ibas">basquete</label> <br>
+            <input type="checkbox" id="ifut"> <label for="ifut">Futebol</label> <br>
+            <input type="checkbox" id="ivol"> <label for="ivol">Vôlei</label> <br>
+            <input type="checkbox" id="inat"> <label for="inat">Natação</label> <br>
+
+            <!--Não esquecer de fazer ligaçao com o input!-->
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar!">
+        </p>
+
+    </form>
+
+</body>
+</html>
