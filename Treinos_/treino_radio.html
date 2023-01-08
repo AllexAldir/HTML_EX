@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+
+    <style>
+
+        h1{
+            text-align: center;
+            
+        }
+
+        fieldset{
+            margin: 10px 0px 34px 0px;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Exemplo de controle de inputs!</h1>
+
+    <form action="../Modulo04/Formulários/php.form.php" method="post">
+
+        <fieldset id="campo_1">
+
+            <input type="radio" required name="rr" id="imasc"><label for="imasc">Masculino</label>
+            <br>
+            <input type="radio" required name="rr" id="ifemi"><label for="ifemi">Feminino</label>
+
+        </fieldset>
+
+
+        <fieldset id="campo_02">
+
+            <input type="checkbox" id="icueca" required><label for="icueca">cueca</label><br>
+            
+            <input type="checkbox" id="ibermuda" required><label for="ibermuda">Bermuda</label><br>
+
+            <input type="checkbox" id="icamisa" required><label for="icamisa">Camisa</label><br>
+
+            <input type="checkbox" id="icinto" required><label for="icinto">Cinto</label><br>
+
+            <input type="checkbox" id="igravata" required><label for="igravata">Gravata</label><br>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar!">
+        </p>
+
+    </form>
+
+
+</body>
+</html>
