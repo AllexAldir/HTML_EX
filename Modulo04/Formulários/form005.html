@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+</head>
+<body>
+
+    <h1>Exemplo de Form!</h1>
+
+    <form action="php.form.php" autocomplete="on" method="post">
+
+        <p>
+
+            <!--Select serve para criar uma aba para selecionar o itens como uma especie de lista!-->
+
+            <label for="iestado">estado:</label>
+            
+            <select name="estado" id="iestado">
+
+                <option value="#" selected>--escolha--</option>
+
+                <optgroup label="Região Sudeste">
+
+                    <option value="iminas">Minas gerais</option>
+                    <option value="isp">São Paulo</option>
+                    <option value="irj">Rio de janeiro</option>
+                    <option value="iep">Espirito Santo</option>
+
+                </optgroup>
+
+
+                <optgroup label="Região Nordeste">
+
+                    <option value="ipe">Pernambuco</option>
+                    <option value="iAlagoas">Alagoas</option>
+
+                </optgroup>
+
+            </select>
+        </p>
+
+
+        <p>
+
+            <!--Aqui para criar uma lista de escolha diferente !-->
+
+            <label for="ipro">Profissão:</label>
+            <input type="text" id="ipro" list="list">
+            <!--Obrigatoriamente tem que colocar o "list"-->
+
+            <datalist id="list">
+
+                <option value="adm">Administrador</option>
+                <option value="Dev">Desenvolvedor</option>
+                <option value="Prof">Professor</option>
+
+            </datalist>
+        </p>
+
+        <p>
+
+            <!--Criar mensagens para o usuário! lembrando que so pode ser em enviado atraves do método "post"-->
+            Mensagem: <br>
+            <textarea name="ims" id="ims" cols="30" rows="10">
+
+            </textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar!">
+            <input type="reset" value="Limpar!">
+        </p>
+
+
+    </form>
+
+</body>
+</html>
