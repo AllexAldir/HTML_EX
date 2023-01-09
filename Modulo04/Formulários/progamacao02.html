@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+
+</head>
+<body>
+    
+    <h1>Treino com progamação!</h1>
+
+    <form action="php.form.php" method="get">
+
+        <p>
+            <label for="inum">nivel de satisfação!</label>
+            <input type="range" required min="0" max="10" value="5" id="inum" oninput="inum2.innerHTML = Number(inum.value)">
+
+            <output id="inum2">5</output>
+
+            <!--Tag "Output" para mostrar o valor que está sendo mostrado!-->
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar!">
+
+        </p>
+
+    </form>
+
+
+</body>
+</html>

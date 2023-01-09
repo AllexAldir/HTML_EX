@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progamação</title>
+</head>
+<body>
+    
+    <h1>Progamção com forms!</h1>
+
+    <form action="" method="get">
+
+        <!--Fazer somas!-->
+
+        <p>
+            <label for="in1">numero1:</label>
+            <input type="number" required min="0" max="50" id="in1" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+
+        </p>
+
+        <p>
+            <label for="in2">numer2:</label>
+            <input type="number" required min="0" max="50" id="in2" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+
+        </p>
+
+        <p>
+            soma:
+            <output name="soma" id="isoma">0</output>
+            
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar!">
+        </p>
+
+    </form>
+
+</body>
+</html>
