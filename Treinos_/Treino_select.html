@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treino</title>
+</head>
+<body>
+    
+    <h1>Treino</h1>
+
+    <h1>Colocando select</h1>
+
+    <form action="../Modulo04/Formulários/php.form.php" method="post">
+
+        <p>
+            <label for="iestado">Estado:</label>
+
+            <select name="" id="iestado">
+
+                <option value="" selected>--Selecione o Estado--</option>
+
+                <optgroup label="Região Nordeste">
+                    <option value="">PE</option>
+                    <option value="">AL</option>
+                    <option value="">BA</option>
+                    <option value="">CE</option>
+                    <option value="">PB</option>
+                    <option value="">TO</option>
+                    <option value="">SE</option>
+                    <option value="">RN</option>
+                    <option value="">PI</option>
+                </optgroup>
+
+
+                <optgroup label="Região sudeste">
+                    <option value="">SP</option>
+                    <option value="">RJ</option>
+                    <option value="">MG</option>
+                    <option value="">ES</option>
+                </optgroup>
+
+
+            </select>
+        </p>
+
+
+        <p>
+            <label for="ilista">Comida:</label>
+            <input type="text" name="" id="ilista" list="ilu" required>
+            
+            <datalist id="ilu">
+
+                <option>Vatapá</option>
+                <option>Vatapá</option>
+                <option>Vatapá</option>
+                <option>Vatapá</option>
+                <option>Vatapá</option>
+
+
+            </datalist>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
