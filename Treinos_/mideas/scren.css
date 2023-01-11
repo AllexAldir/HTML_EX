@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/*Screen*/
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+body{
+    background-image: url(../../Modulo04/media_crere/imagens/back-phone.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+header{
+    background-image: linear-gradient(to right, blue, rgba(0, 0, 0, 0.872));
+    
+    height: 120px;
+    padding: 20px 0px 0px 0px;
+
+}
+
+header > h1{
+    text-align: center;
+    color: white;
+
+    margin: 20px 0px 0px 0px;
+
+
+}
+
+main{
+    padding: 20px 0px 0px 0px;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+
+}
+
+h1#principal{
+    text-align: center;
+    color: rgb(255, 218, 8);
+
+    margin: 0px 0px 20px 0px;
+
+}
+
+article#sec{
+    padding: 0px 0px 0px 10px;
+    margin-bottom: 20px;
+
+}
+
+p{
+    text-indent: 4px;
+    text-align: justify;
+    font-family: sans-serif;
+
+}
+
+footer{
+    padding: 20px 0px 0px 0px;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+
+
+}
+
