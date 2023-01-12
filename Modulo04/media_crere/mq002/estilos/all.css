@@ -16,12 +16,16 @@ html,body{
     width: 100vw;
     height: 100vh;
     
-    background-color: blue;
+    background-color: #2222ff;
+    
+    /*colocando as cores de acordo com a cor do plano de fundo!*/
 }
 
 h1{
     color: white;
     text-shadow: 2px 2px 0px rgb(9, 12, 79);
+
+    text-align: center;
 
 }
 
