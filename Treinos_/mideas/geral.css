@@ -64,10 +64,15 @@
 
     }
 
+    ::-webkit-scrollbar{
+        /* height: 0px; */
+        width: 0px;
+    }
+
     html,
     body {
         height: 100vh;
-        width: 97.8vw;
+        width: 97vw;
 
     }
 
