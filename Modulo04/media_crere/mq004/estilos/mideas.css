@@ -3,7 +3,132 @@
 
 /*Aqui todos as demais mideas!*/
 
+/*Typical device breakpoints:
+-----------------------------
+pequenas telas: até 600px
+Celular: de 600px até 768px
+tablet: 768px até 992px
+desktop: 992px até 1200px
+grandes telaas: acima de 1200px
+------------------------------
+*/
+
+/*Não vou colocar os de dispositivos moveis pos o meu projeto ja inicie com o conceito de mobile firts!*/
 
 @media print {
-    
+    /*Impressoras*/
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg);
+
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#print {
+        display: block;
+    }
+
+    img#tv {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after{
+        content: "Site impresso";
+        font-size: 0.5em;
+        
+    }
+
+    main > h1{
+        text-shadow: none;
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /*Tablet*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg)
+    }
+
+    img#tablet {
+        display: block;
+
+    }
+
+    /*Fazendo a configuração para que a imagem suma e fique somenta a correspondente da do tablet!*/
+
+    img#phone {
+        display: none;
+
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    /*desktops*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+
+    }
+
+    img#phone,
+    #tablet {
+        display: none;
+    }
+
+    img#pc {
+        display: block;
+
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    /*Grandes telas*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+
+    }
+
+    main {
+        width: 700px;
+
+    }
+
+    img#phone,
+    #tablet,
+    #pc {
+        display: none;
+
+    }
+
+    img#tv {
+        display: block;
+
+
+    }
 }
