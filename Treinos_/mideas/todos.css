@@ -60,7 +60,16 @@
         margin: 20px 0px 0px 0px;
         padding: 8px;
 
-        
+
 
     }
+
+    p{
+        line-height: 1.5em;
+        text-align: justify;
+        text-indent: 8px;
+
+    }
+
+    
 }
