@@ -27,8 +27,26 @@ h1#principal {
 
 }
 
-nav {
+span#burguer{
     display: block;
+    text-align: center;
+    padding: 10px;
+
+    background-color: rgb(47, 47, 47);
+    color: white;
+    cursor: pointer; /*Aqui deixa o curso com uma mãozinha!*/
+
+
+}
+
+span#burguer:hover{
+    background-color: white;
+    color: black;
+
+}
+
+nav {
+    display: none;
 
 }
 
@@ -53,6 +71,7 @@ nav > ul > li > a{
 
 nav > ul > li > a:hover{
     background-color: gray;
+    text-decoration: underline;
     
 
 }
@@ -65,7 +84,7 @@ main{
     margin: auto;
     margin-top: 15px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 
 }
 
