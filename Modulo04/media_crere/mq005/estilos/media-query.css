@@ -1,0 +1,30 @@
+@charset "UT-8";
+
+
+
+/*telas sem menu hambuerguer!*/
+
+@media screen and (min-width: 768px) {
+    
+    span#burguer{
+        display: none;
+
+    }
+
+    nav{
+        display: block;
+
+    }
+    
+    nav > ul > li{
+        display: inline-block;
+
+    }
+
+    main{
+        width: 768px;
+        
+
+    }
+
+}

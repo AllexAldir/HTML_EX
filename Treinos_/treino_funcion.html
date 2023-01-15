@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+    
+    <style>
+
+        h2#h2{
+            cursor: pointer;
+
+
+        }
+
+        p#frase{
+            display: block;
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Treino com interações...</h1>
+
+    <div id="principal">
+
+        <h2 onclick="clique" id="h2">Clique aqui!</h2>
+
+        <p id="frase">HELLO WORLD!</p>
+
+
+    </div>
+
+    <script>
+
+        function clique(){
+            if(frase.style.display == "block"){
+                frase.style.display = "none"
+            }else{
+                frase.style.display = "block"
+            }
+
+
+        }
+
+    </script>
+
+
+</body>
+</html>
