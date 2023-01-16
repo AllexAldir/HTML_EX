@@ -8,7 +8,7 @@
     
     <style>
 
-        h2#h2{
+        h2{
             cursor: pointer;
 
 
@@ -32,10 +32,20 @@
 
         <p id="frase">HELLO WORLD!</p>
 
+        <h2 onclick="ccor()">Clique aqui também!</h2>
 
+        <p id="cor">cor</p>
     </div>
 
     <script>    
+
+        function ccor(){
+            
+            if(cor.style.display == "block"){
+                cor.style.display = "color red"
+            }
+
+        }
 
         function onresize(){
             if(window.innerWidth >= 768){
