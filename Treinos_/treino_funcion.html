@@ -22,20 +22,30 @@
     </style>
 
 </head>
-<body>
+<body onresize="tamanho()">
 
     <h1>Treino com interações...</h1>
 
     <div id="principal">
 
-        <h2 onclick="clique" id="h2">Clique aqui!</h2>
+        <h2 onclick="clique()" id="h2">Clique aqui!</h2>
 
         <p id="frase">HELLO WORLD!</p>
 
 
     </div>
 
-    <script>
+    <script>    
+
+        function onresize(){
+            if(window.innerWidth >= 768){
+                frase.style.display = "none"
+            }else{
+                frase.style.display = "block"
+            }
+
+        }
+        //Atribuindo funções para interação com javascript!
 
         function clique(){
             if(frase.style.display == "block"){
@@ -44,7 +54,7 @@
                 frase.style.display = "block"
             }
 
-
+            //ok essa aqui!
         }
 
     </script>
